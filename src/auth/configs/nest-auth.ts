@@ -137,7 +137,7 @@ export const nestAuth = (prisma: PrismaService, emailQueue: QueueService) => {
         },
       }),
       lastLoginMethod(),
-      openAPI(),
+      ...(process.env.NODE_ENV !== 'production' ? [openAPI()] : []),
     ],
     session: {
       cookieCache: {
