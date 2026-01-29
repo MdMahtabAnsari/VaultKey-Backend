@@ -23,7 +23,8 @@
     "prisma:studio": "prisma studio",
     "email:dev": "email dev -p 3001",
     "service:up": "docker compose -f docker/docker-compose.yml up -d",
-    "auth:generate": "pnpm dlx @better-auth/cli@latest generate --config ./src/auth/configs/auth.ts --yes"
+    "auth:generate": "pnpm dlx @better-auth/cli@latest generate --config ./src/auth/configs/auth.ts --yes",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@better-auth/expo": "^1.4.13",
