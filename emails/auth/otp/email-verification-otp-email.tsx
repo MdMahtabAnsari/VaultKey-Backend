@@ -17,7 +17,7 @@ export default function EmailVerificationOTPEmail({
   email,
   otp,
 }: OTPEmailProps): React.ReactElement {
-  const brand = 'EduCart';
+  const brand = 'VaultKey';
   const year = new Date().getFullYear();
   const safeOTP = String(otp ?? '').replace(/\s+/g, '');
   const displayEmail = email || 'there';

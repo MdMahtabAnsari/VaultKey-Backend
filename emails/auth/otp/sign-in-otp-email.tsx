@@ -18,7 +18,7 @@ export interface OTPEmailProps {
 }
 
 export default function SignInOTPEmail({ email, otp }: OTPEmailProps) {
-  const brand = 'EduCart';
+  const brand = 'VaultKey';
   const year = new Date().getFullYear();
   const safeOTP = String(otp ?? '').replace(/\s+/g, '');
   const displayEmail = email || 'there';

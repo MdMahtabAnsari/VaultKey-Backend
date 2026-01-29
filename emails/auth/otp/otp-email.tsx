@@ -19,7 +19,7 @@ interface OTPEmailProps {
 }
 
 export default function OTPEmail({ user, otp }: OTPEmailProps) {
-  const brand = 'EduCart';
+  const brand = 'VaultKey';
   const year = new Date().getFullYear();
   const displayName = user?.name || 'there';
   const safeOTP = String(otp ?? '').replace(/\s+/g, '');

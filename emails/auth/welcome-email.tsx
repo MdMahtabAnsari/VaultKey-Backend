@@ -22,7 +22,7 @@ interface WelcomeEmailProps {
 export default function WelcomeEmail({ user }: WelcomeEmailProps) {
   const brand = 'VaultKey';
   const year = new Date().getFullYear();
-  const appUrl = 'https://educart.example.com/dashboard';
+  const appUrl = 'https://vaultkey.example.com/dashboard';
   const displayName = user?.name;
 
   return (
@@ -43,7 +43,7 @@ export default function WelcomeEmail({ user }: WelcomeEmailProps) {
               </Text>
 
               <Text className="m-0 mb-4 text-sm leading-relaxed text-gray-700">
-                Get started by exploring your dashboard, managing your courses,
+                Get started by exploring your dashboard, managing your vaults,
                 and personalizing your profile.
               </Text>
 
@@ -59,17 +59,17 @@ export default function WelcomeEmail({ user }: WelcomeEmailProps) {
               <Text className="m-0 mb-4 text-sm leading-relaxed text-gray-700">
                 Need help? Visit our{' '}
                 <Link
-                  href="https://educart.example.com/help"
+                  href="https://vaultkey.example.com/help"
                   className="text-[13px] text-blue-600 underline"
                 >
                   Help Center
                 </Link>{' '}
                 or email us at{' '}
                 <Link
-                  href="mailto:support@educart.example.com"
+                  href="mailto:support@vaultkey.example.com"
                   className="text-[13px] text-blue-600 underline"
                 >
-                  support@educart.example.com
+                  support@vaultkey.example.com
                 </Link>
                 .
               </Text>

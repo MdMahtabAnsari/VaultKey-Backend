@@ -14,7 +14,7 @@ import {
 import { OTPEmailProps } from './sign-in-otp-email';
 
 export default function ResetPasswordOTPEmail({ email, otp }: OTPEmailProps) {
-  const brand = 'EduCart';
+  const brand = 'VaultKey';
   const year = new Date().getFullYear();
   const safeOTP = String(otp ?? '').replace(/\s+/g, '');
   const displayEmail = email || 'there';
